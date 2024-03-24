@@ -1,0 +1,39 @@
+:root {
+  --vp-c-brand-1: rgba(0, 0, 0, 1);
+  --vp-c-brand-2: rgba(0, 0, 0, 1);
+  --vp-c-brand-3: rgba(0, 0, 0, 1);
+}
+
+.dark {
+  --vp-c-brand-1: rgba(255, 255, 245, 0.86);
+  --vp-c-brand-2: rgba(255, 255, 245, 0.86);
+  --vp-c-brand-3: rgba(255, 255, 245, 0.86);
+}
+
+.VPDoc .content {
+  max-width: 720px;
+}
+
+.VPLocalNavOutlineDropdown {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .VPNavScreenMenu {
+    display: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .VPNavBarTitle.has-sidebar .title {
+    border-bottom-color: rgba(0, 0, 0, 0) !important;
+  }
+}
+
+.VPNav .divider {
+  display: none !important;
+}
+
+.VPSidebar .group {
+  border-top: none !important;
+}

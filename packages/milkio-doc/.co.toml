@@ -1,0 +1,18 @@
+["general"]
+includes = ["co:bun", "co:git"]
+
+
+["dev"]
+commands = ["dev"]
+scripts = ['''
+    bun run docs:dev
+''']
+
+["publish"]
+commands = ["publish", "publ", "p"]
+scripts = ['''
+    bun run docs:build
+    && git add --all
+    && git commit -m "docs: update"
+    && git push
+''']
